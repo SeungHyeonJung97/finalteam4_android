@@ -7,11 +7,14 @@
     tools:context=".MainActivity">
 
     <LinearLayout
-        android:layout_width="406dp"
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
         android:layout_height="844dp"
+        android:layout_marginTop="3dp"
         android:orientation="vertical"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="3dp">
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <include
             android:id="@+id/toolbar"
@@ -33,29 +36,34 @@
                 android:id="@+id/button14"
                 android:layout_width="270dp"
                 android:layout_height="match_parent"
+                android:background="@drawable/around_btn"
                 android:text="스케쥴러" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_marginTop="15dp"
                 android:orientation="vertical">
 
                 <Button
                     android:id="@+id/button15"
                     android:layout_width="144dp"
-                    android:layout_height="172dp"
+                    android:layout_height="173dp"
+                    android:layout_gravity="top"
                     android:text="커리어" />
 
                 <Button
                     android:id="@+id/button16"
-                    android:layout_width="142dp"
-                    android:layout_height="178dp"
+                    android:layout_width="144dp"
+                    android:layout_height="173dp"
+                    android:layout_gravity="center"
                     android:text="QnA" />
 
                 <Button
                     android:id="@+id/button17"
-                    android:layout_width="137dp"
+                    android:layout_width="144dp"
                     android:layout_height="173dp"
+                    android:layout_gravity="bottom"
                     android:text="게시판" />
             </LinearLayout>
         </TableRow>
